@@ -1,0 +1,18 @@
+ /* Variables */
+
+$color-principal: orangered;
+$color-secondary: black;
+
+/* Import */
+
+@import "./base/reset";
+@import "./componentes/navbar";
+@import "./componentes/header";
+@import "./componentes/footer";
+@import "./pages/home";
+@import "./pages/sobrenosotros";
+@import "./pages/servicios";
+@import "./pages/nuestrostrabajos";
+@import "./pages/contacto";
+@import "./mediaqueries/mediaqueries";
+@import "./abstracts/vars";

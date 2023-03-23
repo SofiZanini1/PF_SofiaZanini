@@ -1,0 +1,84 @@
+// Media queries Sección Inicio Nuestros Trabajos Descripción de los items
+@media (max-width: 767px) {
+  .portfolio-item {
+    .portfolio-caption {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
+}
+
+// Media queries Sección Inicio Sobre Nosotros
+@media (max-width: 767.98px) {
+  .about {
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    .col-md-6 {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+// Media queries Página Sobre Nosotros
+
+.about-us {
+  .team-members {
+
+    @media only screen and (min-width: 1024px),
+    only screen and (min-width: 768px) and (max-width: 1023px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .member {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .member-image {
+          width: 100%;
+          height: auto;
+          max-width: 200px;
+        }
+
+        .member-image-container {
+          width: 80px;
+          height: 80px;
+          overflow: hidden;
+          border-radius: 50%;
+          margin-bottom: 1rem;
+        }
+
+        .member-name {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

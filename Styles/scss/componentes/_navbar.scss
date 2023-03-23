@@ -1,0 +1,12 @@
+/* Nav Bar */
+.navbar {
+  background-color: white;
+
+  .navbar-nav .nav-link {
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-principal;
+    }
+  }
+}

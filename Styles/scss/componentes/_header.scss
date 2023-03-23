@@ -1,0 +1,31 @@
+/* Header Inicio y Aplicación de Map */
+
+$colors: (
+  black: black,
+  white: white,
+  orangered: orangered
+);
+
+.hero {
+    background: url(./Img/Hero.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+
+    .hero-title {
+        font-size: 4rem;
+        color: map-get($colors, white);
+        font-weight: 700;
+    }
+
+    .btn-primary {
+        background-color: map-get($colors, black);
+        border-color: map-get($colors, white);
+        color: map-get($colors, white);
+        border-radius: 30px;
+
+        &:hover {
+            color: map-get($colors, white);
+            background-color: map-get($colors, orangered);
+        }
+    }
+}

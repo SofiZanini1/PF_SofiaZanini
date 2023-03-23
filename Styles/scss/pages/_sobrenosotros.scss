@@ -1,0 +1,94 @@
+  /* ESTILO PÁGINA SOBRE NOSOTROS */
+
+  /* Animación */
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Mixin */
+
+  @mixin box-shadow($x, $y) {
+    box-shadow: $x $y 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    background-image: url("./Img/FondoSobreNosotros.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    animation: fade-in 1.5s ease-in-out;
+
+    .header {
+      grid-column: 1 / span 2;
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
+
+      .title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+    }
+
+    .team {
+      grid-column: 1 / span 2;
+      text-align: center;
+      color: white;
+
+      .subtitle {
+        font-size: 2rem;
+        margin-bottom: 50px;
+      }
+
+      .team-members {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+
+        .member {
+          @include box-shadow(5px, 5px);
+          background-color: rgba(255, 255, 255, 0.7);
+          padding: 20px;
+          text-align: center;
+          border-radius: 10px;
+
+          .member-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+          }
+
+          .member-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: black;
+          }
+
+          .member-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
