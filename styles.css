@@ -372,6 +372,9 @@ a {
 }
 
 @media (max-width: 767px) {
+  .portfolio-item {
+    padding-bottom: 30px;
+  }
   .portfolio-item .portfolio-caption {
     font-size: 14px;
     line-height: 1.2;
@@ -396,6 +399,7 @@ a {
   .about button {
     font-size: 16px;
     padding: 10px 20px;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 1024px), only screen and (min-width: 768px) and (max-width: 1023px) {

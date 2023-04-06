@@ -1,6 +1,7 @@
 // Media queries Sección Inicio Nuestros Trabajos Descripción de los items
 @media (max-width: 767px) {
   .portfolio-item {
+    padding-bottom: 30px;
     .portfolio-caption {
       font-size: 14px;
       line-height: 1.2;
@@ -34,6 +35,7 @@
     button {
       font-size: 16px;
       padding: 10px 20px;
+      margin-bottom: 40px;
     }
   }
 }
