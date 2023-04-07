@@ -1,6 +1,9 @@
 # PF_SofiaZanini
 PF Coder House - Sofía Zanini
 
+Construido con HTML5-CSS3-BOOTSTRAP-JAVASCRIPT
+Compilado con SASS
+
 DESCRIPCIÓN GENERAL:
 
 Este es el proyecto final del Curso de Desarrollo Web de Coder House.
